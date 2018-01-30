@@ -232,7 +232,8 @@
 
   &__bottom {
     position: relative;
-    padding: 75px 0 100px 0;
+    padding: 0;
+    padding-bottom: 100px;
 
     iframe {
       display: none;
@@ -242,7 +243,7 @@
   &__pink-oval {
     position: absolute;
     top: 0;
-    left: -8%;
+    left: -5%;
     width: 10%;
   }
 
