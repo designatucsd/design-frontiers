@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="295px" height="147px" viewBox="0 0 295 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>oval-dual</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="147.5" cy="147.5" r="147.5"></circle>
+    </defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-813.000000, 0.000000)">
+        <g id="header" transform="translate(167.000000, -180.000000)">
+            <g id="oval-dual" transform="translate(646.000000, 32.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#FFD66E" xlink:href="#path-1"></use>
+                <path d="M133,340 C214.738143,340 281,273.962001 281,192.5 C281,111.037999 214.738143,45 133,45 L133,340 Z" id="Oval" fill="#FFC42E" mask="url(#mask-2)" transform="translate(207.000000, 192.500000) rotate(-323.000000) translate(-207.000000, -192.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

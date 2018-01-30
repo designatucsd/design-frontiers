@@ -1,0 +1,249 @@
+.df {
+  &__wrapper {
+    width: 100%;
+    background-color: $WHITE;
+    padding: 0;
+    margin: 0 auto;
+  }
+  &__hero {
+    width: 100%;
+    min-height: 600px;
+    height: 65%;
+    position: relative;
+
+    &__content {
+      height: 100%;
+      padding-top: 12%;
+
+      h2 {
+        color: $HERO_TEXT;
+        display: block;
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: $HERO_TEXT;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+
+      iframe {
+        display: none;
+      }
+    }
+  }
+  &__blue-triangle {
+    position: absolute;
+    top: -5;
+    right: 0;
+    height: 80%;
+  }
+  &__yellow-oval {
+    position: absolute;
+    right: 25%;
+  }
+  &__host {
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+  }
+  &__interest-form {
+    input {
+      height: 50px;
+      border-radius: $BUTTON_RADIUS;
+      background-color: #ebebec;
+      border: none;
+    }
+    button {
+      height: 50px;
+      border-radius: $BUTTON_RADIUS;
+      background-color: $DARK_BLUE;
+
+      &:hover, &:focus {
+        background-color: $LIGHT_BLUE;
+      }
+    }
+  }
+
+  &__part1 {
+    background: url('../images/part1-background.svg') no-repeat center center;
+    background-size: cover;
+    width: 90%;
+    padding: 75px 0;
+    color: $WHITE;
+    margin-bottom: 75px;
+
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+      margin-left: 40px;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__speakers {
+    margin-bottom: 55px;
+
+    &__heading {
+      margin-bottom: 35px;
+    }
+
+    &__card {
+      height: 100%;
+      padding: 0;
+      margin-bottom: 0px;
+      margin-top: 5px;
+      width: 47.5%;
+      display: inline-flex;
+      background: url('../images/speakercard-bg.svg') no-repeat center center;
+
+      &:nth-of-type(odd) {
+        margin-right: 5px;
+      }
+
+      &:nth-of-type(even) {
+        margin-left: 5px;
+      }
+
+      @media (max-width: $MD_BREAKPOINT) {
+        width: 95%;
+        margin: 10px 0;
+
+        // Reset element specific margins
+        &:nth-of-type(1),  &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      &-text {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        h3 {
+          height: 30%;
+          width: 100%;
+          font-size: 24px;
+        }
+
+        p {
+          height: 30%;
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__schedule {
+    margin-bottom: 55px;
+
+    &__card {
+      padding: 25px;
+      margin-bottom: 20px;
+      color: $WHITE;
+      display: flex;
+      align-items: center;
+
+      &:nth-of-type(odd) {
+        background: url('../images/midblue-rectangle.svg') no-repeat center center;
+      }
+      &:nth-of-type(even) {
+        background: url('../images/darkblue-rectangle.svg') no-repeat center center;
+      }
+
+
+      p {
+        display: inline-block;
+        width: 30%;
+        margin: 0;
+      }
+
+      h3 {
+        display: inline-block;
+        width: 60%;
+        margin: 0;
+      }
+    }
+  }
+
+  &__breakout {
+    width: 100%;
+
+    &__card {
+      background: url('../images/pink-breakout-session-bg.svg') no-repeat center center;
+      padding: 40px;
+      color: $WHITE;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 28px;
+        margin-top: 0;
+        width: 65%;
+      }
+      p {
+        font-size: 20px;
+        margin-left: 40px;
+        width: 65%;
+      }
+    }
+  }
+
+  &__faq {
+    margin-bottom: 55px;
+
+    &__card {
+      padding: 25px;
+      margin-bottom: 20px;
+      color: $WHITE;
+      display: flex;
+      align-items: center;
+
+      &:nth-of-type(odd) {
+        background: url('../images/midblue-rectangle.svg') no-repeat center center;
+      }
+      &:nth-of-type(even) {
+        background: url('../images/darkblue-rectangle.svg') no-repeat center center;
+      }
+
+
+      p {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    padding: 75px 0 100px 0;
+
+    iframe {
+      display: none;
+    }
+  }
+
+  &__pink-oval {
+    position: absolute;
+    top: 0;
+    left: -8%;
+    width: 10%;
+  }
+
+  &__yellow-triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+  }
+}
