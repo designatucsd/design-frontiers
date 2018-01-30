@@ -103,6 +103,7 @@
       width: 47.5%;
       display: inline-flex;
       background: url('../images/speakercard-bg.svg') no-repeat center center;
+      background-size: cover;
 
       &:nth-of-type(odd) {
         margin-right: 5px;
@@ -117,7 +118,7 @@
         margin: 10px 0;
 
         // Reset element specific margins
-        &:nth-of-type(1),  &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+        &:nth-of-type(odd),  &:nth-of-type(even) {
           margin-left: 0;
           margin-right: 0;
         }
@@ -157,9 +158,11 @@
 
       &:nth-of-type(odd) {
         background: url('../images/midblue-rectangle.svg') no-repeat center center;
+        background-size: cover;
       }
       &:nth-of-type(even) {
         background: url('../images/darkblue-rectangle.svg') no-repeat center center;
+        background-size: cover;
       }
 
 
@@ -182,6 +185,7 @@
 
     &__card {
       background: url('../images/pink-breakout-session-bg.svg') no-repeat center center;
+      background-size: cover;
       padding: 40px;
       color: $WHITE;
       margin-bottom: 20px;
@@ -211,9 +215,11 @@
 
       &:nth-of-type(odd) {
         background: url('../images/midblue-rectangle.svg') no-repeat center center;
+        background-size: cover;
       }
       &:nth-of-type(even) {
         background: url('../images/darkblue-rectangle.svg') no-repeat center center;
+        background-size: cover;
       }
 
 
