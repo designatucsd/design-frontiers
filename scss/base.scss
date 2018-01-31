@@ -13,6 +13,10 @@ p {
   font-family: $TEXT_FONT;
   line-height: 1.4;
   font-size: 18px;
+
+  @media (max-width: $XS_BREAKPOINT) {
+    font-size: 14px;
+  }
 }
 a {
   &:hover,

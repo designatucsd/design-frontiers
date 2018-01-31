@@ -20,13 +20,22 @@
         display: block;
         font-size: 36px;
         margin-bottom: 40px;
+
+        @media (max-width: $XS_BREAKPOINT) {
+          margin-top: 15vh;
+          font-size: 28px;
+        }
       }
 
       p {
-        color: $HERO_TEXT;
+        color: $HERO_SUB_TEXT;
         display: block;
         font-size: 18px;
         margin-bottom: 25px;
+
+        @media (max-width: $XS_BREAKPOINT) {
+          font-size: 16px;
+        }
       }
 
       iframe {
@@ -34,20 +43,41 @@
       }
     }
   }
-  &__blue-triangle {
-    position: absolute;
-    top: -5;
-    right: 0;
-    height: 80%;
-  }
-  &__yellow-oval {
-    position: absolute;
-    right: 25%;
-  }
   &__host {
     margin: 0;
     padding-top: 2%;
     padding-left: 5%;
+    z-index: 1;
+    position: relative;
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+  &__blue-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+
+    @media (max-width: $SM_BREAKPOINT) {
+      width: 60%;
+      right: -10%;
+      bottom: 5%;
+      top: auto;
+    }
+  }
+  &__yellow-oval {
+    position: absolute;
+    right: 25%;
+    height: 25%;
+
+    @media (max-width: $SM_BREAKPOINT) {
+      height: 15%;
+      right: 5%;
+    }
   }
   &__interest-form {
     input {
