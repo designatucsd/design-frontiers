@@ -229,11 +229,20 @@
         font-size: 28px;
         margin-top: 0;
         width: 60%;
+
+        @media (max-width: $SM_BREAKPOINT) {
+          width: 100%;
+        }
       }
       p {
         font-size: 20px;
         margin-left: 40px;
         width: 60%;
+
+        @media (max-width: $XS_BREAKPOINT) {
+          width: 90%;
+          margin-left: 5px;
+        }
       }
     }
   }
