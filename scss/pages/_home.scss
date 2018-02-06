@@ -56,6 +56,10 @@
       color: inherit;
       font-size: inherit;
     }
+
+    @media (max-width: $SM_BREAKPOINT) {
+      padding-top: 5%;
+    }
   }
   &__blue-triangle {
     position: absolute;
