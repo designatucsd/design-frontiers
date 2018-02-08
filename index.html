@@ -11,14 +11,56 @@
   <meta name="description" content="Homepage of Design Frontiers - day long design sprints at UCSD">
   <meta name="keywords" content="design, frontiers, sprint, ucsd, human, centered, design">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="images/icons/site.webmanifest">
+  <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#f56a56">
+  <meta name="apple-mobile-web-app-title" content="D@U Frontiers">
+  <meta name="application-name" content="D@U Frontiers">
+  <meta name="msapplication-TileColor" content="#fafafa">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
   <div class="container df__wrapper">
-    <nav class="nav">
+    <nav class="df-nav">
+      <div class="container">
+        <div class="df-nav--left">
+          <a href="/">
+            <img class="df-nav__logo" src="images/logo.svg" alt="Design Frontiers Logo">
+          </a>
+        </div>
+        <div class="df-nav--right hidden-sm hidden-xs">
+          <ul class="df-inline-list df-nav--links">
+            <a href="#speakers"><li>Speakers</li></a>
+            <a href="#schedule"><li>Schedule</li></a>
+            <a href="#talks"><li>Talks</li></a>
+            <a href="#faq"><li>FAQ</li></a>
+          </ul>
+        </div>
+        <a class="mobile-link hidden-lg hidden-md">
+          <span class="mobile-hamburger"></span>
+        </a>
+        <div class="navigation nav-right">
+          <ul>
+            <li>
+              <a class="df-nav--mobile-link" href="#speakers">Speakers</a>
+            </li>
+            <li>
+              <a class="df-nav--mobile-link" href="#schedule">Schedule</a>
+            </li>
+            <li>
+              <a class="df-nav--mobile-link" href="#talks">Talks</a>
+            </li>
+            <li>
+              <a class="df-nav--mobile-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero -->
@@ -26,10 +68,9 @@
       <img class="df__yellow-oval" src="images/yellow-oval-header.svg" alt="Yellow Oval Header">
       <img class="df__blue-triangle" src="images/blue-triangle-header.svg" alt="Blue Triangle Header">
       <div class="container">
-        <h4 class="df__host">Hosted by <a href="https://designatucsd.org" target="_blank">Design at UCSD</a></h4>
         <div class="row">
           <div class="df__hero__content col-xs-10 col-xs-offset-1">
-            <h2>Design Frontiers: Edtech</h2>
+            <h2>Design Frontiers: Education</h2>
             <p>March 10th @ Qualcomm Room. JSOE</p>
             <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
             <div class="row">
@@ -65,7 +106,7 @@
     </section>
 
     <!-- Speakers -->
-    <section class="df__speakers">
+    <section id="speakers" class="df__speakers">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1">
@@ -73,47 +114,24 @@
               <h2 class="df__speakers__heading">Speakers</h2>
               <div class="df__speakers__card-container">
                 <div class="df__speakers__card">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="img-responsive" src="images/michael_meyer.jpg" alt="Michael Meyer">
-                    </div>
-                    <div class="col-xs-7 df__speakers__card-text">
-                      <h3>Michael Meyer</h3>
-                      <p>Lecturer, UCSD</p>
-                    </div>
+                  <img class="img-circle" src="images/beth-simon.png" alt="Dr. Beth Simon">
+                  <div class="df__speakers__card-text text-center">
+                    <h3>Dr. Beth Simon</h3>
+                    <p>UCSD Department of Education Studies</p>
                   </div>
                 </div>
                 <div class="df__speakers__card">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="img-responsive" src="images/michael_meyer.jpg" alt="Michael Meyer">
-                    </div>
-                    <div class="col-xs-7 df__speakers__card-text">
-                      <h3>Michael Meyer</h3>
-                      <p>Lecturer, UCSD</p>
-                    </div>
+                  <img class="img-circle" src="images/speaker-placeholder.svg" alt="Placeholder">
+                  <div class="df__speakers__card-text text-center">
+                    <h3>TBD</h3>
+                    <p></p>
                   </div>
                 </div>
                 <div class="df__speakers__card">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="img-responsive" src="images/michael_meyer.jpg" alt="Michael Meyer">
-                    </div>
-                    <div class="col-xs-7 df__speakers__card-text">
-                      <h3>Michael Meyer</h3>
-                      <p>Lecturer, UCSD</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="df__speakers__card">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="img-responsive" src="images/michael_meyer.jpg" alt="Michael Meyer">
-                    </div>
-                    <div class="col-xs-7 df__speakers__card-text">
-                      <h3>Michael Meyer</h3>
-                      <p>Lecturer, UCSD</p>
-                    </div>
+                  <img class="img-circle" src="images/speaker-placeholder.svg" alt="Placeholder">
+                  <div class="df__speakers__card-text text-center">
+                    <h3>TBD</h3>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -123,7 +141,7 @@
       </div>
     </section>
 
-    <section class="df__schedule">
+    <section id="schedule" class="df__schedule">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1">
@@ -156,35 +174,36 @@
     </section>
 
 
-    <section class="df__breakout">
+    <section id="talks" class="df__breakout">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-11 col-xs-offset-1">
             <div class="row">
-              <h2 class="df__breakout__heading">Breakout Sessions</h2>
+              <h2 class="df__breakout__heading">Talks</h2>
               <div class="df__breakout__card">
+                <h3>Details coming soon!</h3>
+                <!-- <h3>3 Ways to Incorporate Your Users Into Your Design Process</h3>
+                <p>
+                  A day-long design sprint open to the UCSD community focusing on applying
+                  human-centered design to education
+                </p>
+                <p>Speaker: Michael Meyer</p> -->
+              </div>
+              <!-- <div class="df__breakout__card">
                 <h3>3 Ways to Incorporate Your Users Into Your Design Process</h3>
                 <p>
                   A day-long design sprint open to the UCSD community focusing on applying
                   human-centered design to education
                 </p>
                 <p>Speaker: Michael Meyer</p>
-              </div>
-              <div class="df__breakout__card">
-                <h3>3 Ways to Incorporate Your Users Into Your Design Process</h3>
-                <p>
-                  A day-long design sprint open to the UCSD community focusing on applying
-                  human-centered design to education
-                </p>
-                <p>Speaker: Michael Meyer</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="df__faq">
+    <section id="faq" class="df__faq">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1">
@@ -236,5 +255,6 @@
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

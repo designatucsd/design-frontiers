@@ -17,7 +17,7 @@
       padding-top: 12%;
 
       h2 {
-        color: $HERO_TEXT;
+        color: $GRAY_1;
         display: block;
         font-size: 36px;
         margin-bottom: 40px;
@@ -29,7 +29,7 @@
       }
 
       p {
-        color: $HERO_SUB_TEXT;
+        color: $GRAY_2;
         display: block;
         font-size: 18px;
         margin-bottom: 25px;
@@ -44,26 +44,8 @@
       }
     }
   }
-  &__host {
-    margin: 0;
-    padding-top: 2%;
-    padding-left: 5%;
-    z-index: 1;
-    position: relative;
-
-    a {
-      text-decoration: underline;
-      color: inherit;
-      font-size: inherit;
-    }
-
-    @media (max-width: $SM_BREAKPOINT) {
-      padding-top: 5%;
-    }
-  }
   &__blue-triangle {
     position: absolute;
-    top: 0;
     right: 0;
     height: 80%;
 
@@ -108,7 +90,6 @@
     width: 90%;
     padding: 75px 0;
     color: $WHITE;
-    margin-bottom: 75px;
 
     h3 {
       font-size: 28px;
@@ -124,31 +105,37 @@
   }
 
   &__speakers {
-    margin-bottom: 55px;
+    padding-top: 75px;
 
     &__heading {
       margin-bottom: 35px;
     }
 
+    &__card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     &__card {
       height: 100%;
-      padding: 0;
+      width: 31%;
+      max-width: 500px;
+      padding: 20px;
       margin-bottom: 0px;
       margin-top: 5px;
-      width: 49%;
-      display: inline-flex;
+      display: inline-block;
+      box-sizing: border-box;
       background: url('../images/speakercard-bg.svg') no-repeat center center;
       background-size: cover;
 
-      &:nth-of-type(odd) {
-        margin-right: 5px;
+      img {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
       }
 
-      &:nth-of-type(even) {
-        margin-left: 5px;
-      }
-
-      @media (max-width: $MD_BREAKPOINT) {
+      @media (max-width: $SM_BREAKPOINT) {
         width: 100%;
         margin: 10px 0;
 
@@ -160,11 +147,8 @@
       }
 
       &-text {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: space-between;
-        flex-wrap: wrap;
+        min-height: 150px;
+        padding-top: 15px;
 
         h3 {
           height: 30%;
@@ -182,7 +166,7 @@
   }
 
   &__schedule {
-    margin-bottom: 55px;
+    padding-top: 75px;
 
     &__card {
       padding: 25px;
@@ -216,6 +200,7 @@
   }
 
   &__breakout {
+    padding-top: 75px;
     width: 100%;
 
     &__card {
