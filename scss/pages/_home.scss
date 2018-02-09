@@ -66,6 +66,33 @@
       right: 5%;
     }
   }
+  &__sign-up {
+    height: 50px;
+    width: 100px;
+    border-radius: $BUTTON_RADIUS;
+    background-color: $DARK_BLUE;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      background-color: $DARK_PEACH;
+      border-color: $DARK_PEACH;
+    }
+  }
+  &__sponsor {
+    height: 50px;
+    width: 100px;
+    border-radius: $BUTTON_RADIUS;
+    background-color: $WHITE;
+    color: $DARK_BLUE;
+    border: 2px solid $DARK_BLUE;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      background-color: $WHITE;
+      color: $DARK_PEACH;
+      border: 2px solid $DARK_PEACH;
+    }
+  }
   &__interest-form {
     input {
       height: 50px;
@@ -185,13 +212,13 @@
       }
 
 
-      p {
+      &-time {
         display: inline-block;
         width: 30%;
         margin: 0;
       }
 
-      h3 {
+      &-text {
         display: inline-block;
         width: 60%;
         margin: 0;
