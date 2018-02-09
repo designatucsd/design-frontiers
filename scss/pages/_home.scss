@@ -73,9 +73,14 @@
     background-color: $DARK_BLUE;
     text-transform: uppercase;
 
-    &:hover, &:focus {
+    &:hover,
+    &:active,
+    &:target,
+    &:focus,
+    &:active:focus {
       background-color: $DARK_PEACH;
       border-color: $DARK_PEACH;
+      outline: 0;
     }
   }
   &__sponsor {
@@ -87,10 +92,15 @@
     border: 2px solid $DARK_BLUE;
     text-transform: uppercase;
 
-    &:hover, &:focus {
+    &:hover,
+    &:active,
+    &:target,
+    &:focus,
+    &:active:focus {
       background-color: $WHITE;
       color: $DARK_PEACH;
       border: 2px solid $DARK_PEACH;
+      outline: 0;
     }
   }
   &__interest-form {
