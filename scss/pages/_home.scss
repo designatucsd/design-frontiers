@@ -142,7 +142,7 @@
   }
 
   &__speakers {
-    padding-top: 75px;
+    padding-top: 85px;
 
     &__heading {
       margin-bottom: 35px;
@@ -203,7 +203,7 @@
   }
 
   &__schedule {
-    padding-top: 75px;
+    padding-top: 85px;
 
     &__card {
       padding: 25px;
@@ -237,7 +237,7 @@
   }
 
   &__breakout {
-    padding-top: 75px;
+    padding-top: 85px;
     width: 100%;
 
     &__card {
@@ -270,6 +270,7 @@
   }
 
   &__faq {
+    padding-top: 85px;
     margin-bottom: 55px;
 
     &__card {
@@ -303,8 +304,10 @@
     padding: 0;
     padding-bottom: 100px;
 
-    iframe {
-      display: none;
+    &-logo {
+      height: auto;
+      max-width: 200px;
+      margin-top: 30px;
     }
   }
 
@@ -366,4 +369,11 @@
       margin-top: 0px;
     }
   }
+}
+
+#design-lab-logo .st0 {
+  fill:#11284A;
+}
+#design-lab-logo .st1{
+  fill:#C89313;
 }
