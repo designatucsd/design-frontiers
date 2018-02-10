@@ -278,6 +278,8 @@
       color: $WHITE;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      cursor: pointer;
 
       &:nth-of-type(odd) {
         background: url('../images/midblue-rectangle.svg') no-repeat center center;
