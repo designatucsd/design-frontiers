@@ -291,9 +291,13 @@
         background-size: cover;
       }
 
+      &-text {
+        margin-top: 15px;
+        max-width: 750px;
+      }
 
       p {
-        display: inline-block;
+        display: block;
         margin: 0;
       }
     }
