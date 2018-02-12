@@ -25,6 +25,7 @@
         @media (max-width: $XS_BREAKPOINT) {
           margin-top: 15vh;
           font-size: 28px;
+          margin-bottom: 20px;
         }
       }
 
@@ -32,7 +33,7 @@
         color: $GRAY_2;
         display: block;
         font-size: 18px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         @media (max-width: $XS_BREAKPOINT) {
           font-size: 16px;
