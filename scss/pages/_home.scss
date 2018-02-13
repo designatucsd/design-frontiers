@@ -7,19 +7,24 @@
   }
   &__hero {
     width: 100%;
-    min-height: 600px;
     height: 65%;
     position: relative;
     overflow-x: hidden;
+    min-height: 600px;
+
+    @media (min-width: $XS_BREAKPOINT) {
+      padding-top: 72px;
+      min-height: 600px;
+    }
 
     &__content {
       height: 100%;
-      padding-top: 12%;
+      padding-top: 8%;
 
       h2 {
         color: $GRAY_1;
         display: block;
-        font-size: 36px;
+        font-size: 40px;
         margin-bottom: 40px;
 
         @media (max-width: $XS_BREAKPOINT) {
@@ -50,20 +55,27 @@
     right: 0;
     height: 80%;
 
-    @media (max-width: $SM_BREAKPOINT) {
+    @media (max-width: $MD_BREAKPOINT) {
       width: 60%;
       right: -10%;
       bottom: 5%;
       top: auto;
     }
+
+    @media (max-width: $XS_BREAKPOINT) {
+      bottom: -5%;
+    }
   }
   &__yellow-oval {
     position: absolute;
     right: 25%;
-    height: 25%;
+    height: 35%;
+    top: 0;
 
     @media (max-width: $SM_BREAKPOINT) {
-      height: 15%;
+      height: 25%;
+    }
+    @media (max-width: $MD_BREAKPOINT) {
       right: 5%;
     }
   }
@@ -320,7 +332,8 @@
     position: absolute;
     top: 0;
     left: -5%;
-    width: 10%;
+    width: 12%;
+    min-width: 80px;
   }
 
   &__yellow-triangle {
@@ -328,51 +341,6 @@
     bottom: 0;
     right: 0;
     width: 15%;
-  }
-}
-
-.footer {
-  background: url('../images/footer-bg.svg') no-repeat center center;
-  background-size: cover;
-  min-height: 100px;
-  padding-top: 30px;
-  color: $WHITE;
-
-  &-icon {
-    display: inline-block;
-    border: 3px solid $WHITE;
-    border-radius: 24px;
-    margin-left: 15px;
-    color: $WHITE;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-    font-size: 20px;
-
-    &:hover,
-    &:focus,
-    &:active,
-    &:target,
-    &:active:focus {
-      color: $WHITE;
-      outline: 0;
-    }
-
-    @media (max-width: $XS_BREAKPOINT) {
-      width: 35px;
-      height: 35px;
-      padding: 5px;
-      font-size: 16px;
-    }
-  }
-
-  &-copyright {
-    margin-top: 10px;
-
-    @media (max-width: $XS_BREAKPOINT) {
-      margin-top: 0px;
-    }
   }
 }
 
