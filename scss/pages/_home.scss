@@ -169,23 +169,23 @@
 
     &__card {
       height: 100%;
-      width: 31%;
-      max-width: 500px;
-      padding: 20px;
+      padding: 0;
       margin-bottom: 0px;
       margin-top: 5px;
-      display: inline-block;
-      box-sizing: border-box;
+      width: 49%;
+      display: inline-flex;
       background: url('../images/speakercard-bg.svg') no-repeat center center;
       background-size: cover;
 
-      img {
-        width: 90%;
-        margin: 10px auto;
-        display: block;
+      &:nth-of-type(odd) {
+        margin-right: 5px;
       }
 
-      @media (max-width: $SM_BREAKPOINT) {
+      &:nth-of-type(even) {
+        margin-left: 5px;
+      }
+
+      @media (max-width: $MD_BREAKPOINT) {
         width: 100%;
         margin: 10px 0;
 
@@ -197,8 +197,11 @@
       }
 
       &-text {
-        min-height: 150px;
-        padding-top: 15px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-wrap: wrap;
 
         h3 {
           height: 30%;
@@ -263,7 +266,7 @@
       h3 {
         font-size: 28px;
         margin-top: 0;
-        width: 60%;
+        width: 70%;
 
         @media (max-width: $SM_BREAKPOINT) {
           width: 100%;
