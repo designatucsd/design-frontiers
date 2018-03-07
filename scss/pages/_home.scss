@@ -168,12 +168,12 @@
     }
 
     &__card {
-      height: 100%;
+      max-height: 250px;
       padding: 0;
       margin-bottom: 0px;
       margin-top: 5px;
       width: 49%;
-      display: inline-flex;
+      display: flex;
       background: url('../images/speakercard-bg.svg') no-repeat center center;
       background-size: cover;
 
@@ -196,8 +196,12 @@
         }
       }
 
+      &-img {
+        width: 45%;
+      }
+
       &-text {
-        height: 100%;
+        width: 55%;
         display: flex;
         justify-content: center;
         align-content: space-between;
@@ -213,6 +217,21 @@
           height: 30%;
           width: 100%;
           font-size: 18px;
+        }
+      }
+
+      @media (max-width: $XS_BREAKPOINT) {
+        max-height: 600px;
+        display: block;
+        
+        &-img {
+          width: 100%;
+          display: block;
+        }
+
+        &-text {
+          width: 100%;
+          display: block;
         }
       }
     }
