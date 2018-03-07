@@ -221,7 +221,7 @@
       }
 
       @media (max-width: $XS_BREAKPOINT) {
-        max-height: 600px;
+        max-height: none;
         display: block;
         
         &-img {
@@ -230,8 +230,16 @@
         }
 
         &-text {
+          height: 100px;
           width: 100%;
           display: block;
+          background: url('../images/speakercard-bg.svg') no-repeat center center;
+          background-size: cover;
+
+          h3 {
+            margin-top: 0;
+            padding: 20px;
+          }
         }
       }
     }
