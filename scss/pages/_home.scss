@@ -152,6 +152,28 @@
     .underline {
       text-decoration: underline;
     }
+
+    &-briefs {
+      border: 2px solid white;
+      border-radius: 0;
+      background: transparent;
+      color: white;
+      margin-left: 5px;
+      margin-top: 25px;
+      height: 50px;
+      width: 100px;
+
+      &:hover,
+      &:active,
+      &:target,
+      &:focus,
+      &:active:focus {
+        border: 2px solid $DARK_BLUE;
+        color: $DARK_BLUE;
+        border-radius: 0;
+        background: transparent;
+      }
+    }
   }
 
   &__speakers {
